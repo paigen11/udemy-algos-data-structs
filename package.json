@@ -1,0 +1,14 @@
+{
+  "name": "udemy-algos-data-structs",
+  "version": "1.0.0",
+  "description": "Repo of Udemy JS Algorithms & Data Structures",
+  "main": "add1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paige Niedringhaus (paigen11@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "performance-now": "^2.1.0"
+  }
+}
