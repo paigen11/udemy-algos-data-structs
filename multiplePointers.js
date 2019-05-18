@@ -36,7 +36,7 @@ function sumZero2(arr) {
 
   while (left < right) {
     let sum = arr[left] + arr[right];
-    // if the two numbbers summed equal 0, you're done
+    // if the two numbers summed equal 0, you're done
     if (sum === 0) {
       return [arr[left], arr[right]];
     } else if (sum > 0) {
