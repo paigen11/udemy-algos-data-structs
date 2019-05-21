@@ -45,7 +45,7 @@ function maxSubarraySum2(arr, num) {
   // null check first
   if (arr.length < num) return null;
 
-  // sum together the first three digits
+  // sum together the first x digits
   for (let i = 0; i < num; i++) {
     maxSum += arr[i];
   }
