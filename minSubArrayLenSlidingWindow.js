@@ -25,19 +25,24 @@ function minSubArrayLen(arr, num) {
   let minLen = Infinity;
 
   while (start < arr.length) {
-    // if total is less than the num and the end index is less than the array's length
+    // if current window doesn't add up to the given sum then
+    // move the window to right
     if (total < num && end < arr.length) {
       // increase the total with the value at the array's index and increment the end value
       total += arr[end];
       end++;
-      // if the total is greater than or equal to the num
-    } else if (total >= num) {
+    }
+    // if current window adds up to at least the sum given then
+    // we can shrink the window
+    else if (total >= num) {
       // take the minimum length between the minLen or the difference between the end and start values
       minLen = Math.min(minLen, end - start);
       // subtract the start value from the total and increment it
       total -= arr[start];
       start++;
-    } else {
+    }
+    // current total less than required total but we reach the end, need this or else we'll be in an infinite loop
+    else {
       break;
     }
   }
