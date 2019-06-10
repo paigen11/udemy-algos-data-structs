@@ -36,3 +36,14 @@ function countDown(num) {
 
 console.log(countDown(5));
 console.log(countDown(3));
+
+// second recursive function
+function sumRange(num) {
+  // base case checks if num is 1
+  if (num === 1) return 1;
+  // recursive call
+  return num + sumRange(num - 1);
+}
+
+console.log(sumRange(4));
+console.log(sumRange(3));
