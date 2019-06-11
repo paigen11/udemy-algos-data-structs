@@ -47,3 +47,24 @@ function sumRange(num) {
 
 console.log(sumRange(4));
 console.log(sumRange(3));
+
+// factorial iteratively
+function factorial(num) {
+  let total = 1;
+  for (let i = num; i > 1; i--) {
+    total *= i;
+  }
+  return total;
+}
+
+console.log('Factorial', factorial(3));
+console.log('Factorial', factorial(4));
+
+// factorial recursively
+function recurseFactorial(num) {
+  if (num === 1) return 1;
+  return num * recurseFactorial(num - 1);
+}
+
+console.log('Recursive factorial', recurseFactorial(3));
+console.log('Recursive factorial', recurseFactorial(4));
