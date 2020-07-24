@@ -7,6 +7,8 @@ until you reach the value you're looking for
 
 dividing and conquering */
 
+/* big o: worst and average case o(log n), best case o(1) */
+
 // binary search function should accept a sorted array and a value
 // create a left pointer at array start, right pointer at end of array
 // while left pointer comes before right pointer, keep looping and check the middle value
