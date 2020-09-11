@@ -1,4 +1,4 @@
-// oject data structures - unordered key / value pairs
+// object data structures - unordered key / value pairs
 // they work well when you don't need order
 // when you need fast access / insertion and removal
 
